@@ -1,0 +1,20 @@
+# Ignore node_modules to prevent copying existing dependencies
+lola-ia/node_modules
+lola-ia/.npm
+lola-ia/npm-debug.log*
+lola-ia/yarn-debug.log*
+lola-ia/yarn-error.log*
+
+# Ignore build outputs
+lola-ia/dist
+lola-ia/build
+
+# Ignore IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

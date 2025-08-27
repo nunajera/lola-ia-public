@@ -1,0 +1,20 @@
+services:
+  lola-ia-backend:
+    build:
+      context: ./lola-ia-backend
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - PORT=8080
+
+  lola-ia-frontend:
+    build:
+      context: ./lola-ia-frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE: http://lola-ia-backend:8080
+    ports:
+      - 5173:80
+    depends_on:
+      - lola-ia-backend

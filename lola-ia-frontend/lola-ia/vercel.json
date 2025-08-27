@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/api/(.*)", "destination": "https://9783b0729fcd.ngrok-free.app/$1" },
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
+  }
